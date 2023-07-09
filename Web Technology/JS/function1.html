@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        //defination of function
+        function msg()
+        {
+            document.write("Hello Function");    
+            console.log("Hello Function");//will print inside function
+        }
+        msg();//calling function
+
+        //return value to the function
+        function cube()
+        {
+            return 5*5*5;
+        }
+        var c=cube();
+        console.log(c);
+        document.write("<br>"+c);
+
+        function add(num1,num2)
+        {
+            var num3=num1+num2;
+            return num3;
+        }
+        console.log(add(100,200));
+
+        var a= function show()
+        {
+            document.write("Hello function");
+        }
+        a();
+        var reject = function st()
+        {
+            return false;
+        }
+        function acd(reject)
+        {
+            if(reject)
+            {
+                console.log("true");
+            }
+            else{
+                console.log("False");
+            }
+            acd();
+            //arrow function
+            var asd=()=>
+            {
+                console.log("arrow function");
+            }
+            asd();
+
+            var ano=function()
+            {
+                console.log("anonymose function");
+            }
+            ano();
+
+            var ar=()=>console.log("arrow"); //arrow function
+            ar();
+
+            var a1=(num)=>
+            {
+                return 10;
+            }
+            console.log(a1());
+
+            //IIFE
+            (function()
+            {
+                console.log("IIFE");
+            })();
+
+        }
+    </script>
+</body>
+</html>

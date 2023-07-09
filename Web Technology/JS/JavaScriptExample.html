@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //to print data on web page
+        document.write("Hello JavaScript");
+        //declare a variable
+        var count=100;  
+
+        document.write(count);
+
+        document.write("<br>"+count);//to write on another line
+
+        num=10;
+
+        document.write("<br>"+num);
+
+        let num1=20;
+        document.write("<br>"+num1);
+
+        let num2=30;
+        document.write("<br>"+num2);
+
+        var count =200;
+        document.write("<br>"+count);
+        
+        num2=230;
+        document.write("<br>"+num2);
+
+        const num3=1000;//cannot redefine
+        document.write("<br>"+num3);
+
+        for(var i=0;i<=10;i++)
+        {
+            document.write("<br>"+i);
+        }
+
+        var n1=0,n2=1;
+        document.write("<br"+n1+" "+n2+" ");
+        while(n2<100)
+        {
+            n2=n1+n2;
+            document.write(n2+" ");
+            n1=n2-n1;
+        }
+        var msg="Hello";
+        if(msg=="Hello")
+        {
+            document.write("<br>True");
+
+        }
+        else{
+            document.write("<br>False");
+        }
+    </script>
+</body>
+</html>
